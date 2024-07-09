@@ -1,0 +1,148 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6398D69B-0E5E-AA8E-9868-A49C3D1E0520" name="FITNESS_ASSESSMENT">
+<createdBy>gusmorris</createdBy>
+<createdTime>2024-02-01 08:21:42 UTC</createdTime>
+<generatorID>6A00B833-CA7A-B65A-2236-7D79B1E8C7B4</generatorID>
+<ownerDesignName>vfc</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ass_date" id="46948358-DC94-4E2D-B18A-69A2A35069AE">
+<createdBy>gusmorris</createdBy>
+<createdTime>2024-02-01 08:21:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[assessment date in the format DDMMYYYY]]></commentInRDBMS>
+<generatorID>D1D71F19-F6CD-8AC8-A57C-45B2074C1136</generatorID>
+<ownerDesignName>vfc</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>8,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ass_weight" id="507A2A69-0871-FCBE-CB54-AFBE44DAE330">
+<createdBy>gusmorris</createdBy>
+<createdTime>2024-02-01 08:21:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[weight of member in assessment]]></commentInRDBMS>
+<generatorID>ACE2B29C-EDDD-6FAC-62D3-DBA23F617AD2</generatorID>
+<ownerDesignName>vfc</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ass_BMI" id="B7312419-A9A2-FFF8-E1D0-CBE242928034">
+<createdBy>gusmorris</createdBy>
+<createdTime>2024-02-01 08:21:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[BMI of the member in %]]></commentInRDBMS>
+<generatorID>7D784529-A1FF-E4FE-C952-07F9BBC9B4B6</generatorID>
+<ownerDesignName>vfc</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ass_vo2max" id="D64E81FD-7E5A-3927-C247-2109D72DFABD">
+<createdBy>gusmorris</createdBy>
+<createdTime>2024-02-01 08:21:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[VO2MAX of member]]></commentInRDBMS>
+<generatorID>36B7117B-810B-816A-0971-53F8D7F4A6F1</generatorID>
+<ownerDesignName>vfc</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ass_bloodpressure" id="1A103BC6-ACBD-D78D-2177-6B13C5C1B260">
+<createdBy>gusmorris</createdBy>
+<createdTime>2024-02-01 08:21:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[recorded bloodpressure of member]]></commentInRDBMS>
+<generatorID>2F7C6DE1-2FB3-F6B9-B27A-92E403268E40</generatorID>
+<ownerDesignName>vfc</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="member_no" id="050EACDC-799A-A5DB-8C81-6ED595D20A37">
+<createdBy>gusmorris</createdBy>
+<createdTime>2024-02-01 08:21:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[member number]]></commentInRDBMS>
+<generatorID>5BCB1336-6DCE-51A9-8C23-8D3042F284D6</generatorID>
+<ownerDesignName>vfc</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="ABBC3BA6-8E61-828B-7F4F-ADF7EBF36F37" referredColumn="6E8271EE-544F-0550-C9A5-1762FB288055"/>
+</associations>
+</Column>
+<Column name="staff_id" id="2BE6124B-25E9-92D0-D4D8-E8F3873F50AB">
+<createdBy>gusmorris</createdBy>
+<createdTime>2024-02-01 08:21:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[unique staff id number]]></commentInRDBMS>
+<generatorID>284D0FBC-E933-9916-6BA3-3338D8852F8A</generatorID>
+<ownerDesignName>vfc</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1C28E0D0-E9BB-B218-B961-3057A8D6F716" referredColumn="0E939083-117B-3314-44D3-7B3622F71E2E"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="12F1447E-2048-1ABB-3C31-2E3D560E3653" name="FITNESS_ASSESSMENT_PK">
+<createdBy>gusmorris</createdBy>
+<createdTime>2024-02-01 08:21:42 UTC</createdTime>
+<generatorID>9DA68768-C196-9AF5-D699-0D64D5FD6F21</generatorID>
+<ownerDesignName>vfc</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="46948358-DC94-4E2D-B18A-69A2A35069AE"/>
+<colUsage columnID="050EACDC-799A-A5DB-8C81-6ED595D20A37"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="17ED59E3-6E67-DDA7-82B2-BE2844202971" name="MEMBER_FIT_ASSESS">
+<createdBy>gusmorris</createdBy>
+<createdTime>2024-02-01 08:21:42 UTC</createdTime>
+<generatorID>59D76A56-E6C5-A055-05F3-B38042EAB752</generatorID>
+<ownerDesignName>vfc</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="050EACDC-799A-A5DB-8C81-6ED595D20A37"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6044B2FD-BECB-4B31-2CDA-2019A50779C1" name="STAFF_FIT_ASSESS">
+<createdBy>gusmorris</createdBy>
+<createdTime>2024-02-01 08:21:42 UTC</createdTime>
+<generatorID>D25DCBCE-9521-D297-E232-F8D30FB54325</generatorID>
+<ownerDesignName>vfc</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2BE6124B-25E9-92D0-D4D8-E8F3873F50AB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

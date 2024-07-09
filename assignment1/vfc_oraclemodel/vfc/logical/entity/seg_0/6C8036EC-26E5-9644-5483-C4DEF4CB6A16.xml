@@ -1,0 +1,134 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="6C8036EC-26E5-9644-5483-C4DEF4CB6A16" name="CENTRE">
+<createdBy>madeleineneaves</createdBy>
+<createdTime>2024-01-31 01:39:04 UTC</createdTime>
+<ownerDesignName>vfc</ownerDesignName>
+<engineerTo>
+<item key="E14825AF-E34F-3D2F-44F9-3A580813D379" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="centre_id" id="6E5C09EB-E711-B575-3875-760CB7D24151">
+<createdBy>madeleineneaves</createdBy>
+<createdTime>2024-01-31 01:41:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[unique centre id number]]></commentInRDBMS>
+<ownerDesignName>vfc</ownerDesignName>
+<engineerTo>
+<item key="E14825AF-E34F-3D2F-44F9-3A580813D379" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="centre_name" id="D7C9B200-67EC-671D-58FD-5AFFE56976F8">
+<createdBy>madeleineneaves</createdBy>
+<createdTime>2024-01-31 01:41:26 UTC</createdTime>
+<commentInRDBMS><![CDATA[name of the centre]]></commentInRDBMS>
+<ownerDesignName>vfc</ownerDesignName>
+<engineerTo>
+<item key="E14825AF-E34F-3D2F-44F9-3A580813D379" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="centre_address_street" id="2B754718-0BB4-2C0E-02F3-0C14E2FB1EBB">
+<createdBy>madeleineneaves</createdBy>
+<createdTime>2024-01-31 01:41:38 UTC</createdTime>
+<commentInRDBMS><![CDATA[street address of centre]]></commentInRDBMS>
+<ownerDesignName>vfc</ownerDesignName>
+<engineerTo>
+<item key="E14825AF-E34F-3D2F-44F9-3A580813D379" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="centre_address_town" id="010ED111-B861-D25D-1039-3A83EA3BB9C0">
+<createdBy>madeleineneaves</createdBy>
+<createdTime>2024-01-31 01:42:05 UTC</createdTime>
+<commentInRDBMS><![CDATA[town location of centre]]></commentInRDBMS>
+<ownerDesignName>vfc</ownerDesignName>
+<engineerTo>
+<item key="E14825AF-E34F-3D2F-44F9-3A580813D379" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="centre_address_postcode" id="1FCE3D01-A0E9-9145-ADEE-93905F6F2E4F">
+<createdBy>madeleineneaves</createdBy>
+<createdTime>2024-01-31 01:42:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[postcode of the centre]]></commentInRDBMS>
+<ownerDesignName>vfc</ownerDesignName>
+<engineerTo>
+<item key="E14825AF-E34F-3D2F-44F9-3A580813D379" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="staff_id" id="CCEFE339-CE1D-4FB5-7F7F-AA9B32808F72">
+<createdBy>madeleineneaves</createdBy>
+<createdTime>2024-01-31 04:58:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[unique staff id number]]></commentInRDBMS>
+<generatorID>2B518EFA-BB3A-F2C0-F951-020592CF0911</generatorID>
+<ownerDesignName>vfc</ownerDesignName>
+<engineerTo>
+<item key="E14825AF-E34F-3D2F-44F9-3A580813D379" value="true"/>
+</engineerTo>
+<referedAttribute>18BE91BA-0D03-1E17-A6DA-8FC425021CD4</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="centre_address_street_no" id="D4796E1B-70E7-0C41-7E61-54FDDFCE0176">
+<createdBy>vinic</createdBy>
+<createdTime>2024-01-31 08:44:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[street number of the address]]></commentInRDBMS>
+<ownerDesignName>vfc</ownerDesignName>
+<engineerTo>
+<item key="E14825AF-E34F-3D2F-44F9-3A580813D379" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="CDFAF868-5AF9-94A8-04D0-ACEF87E0BB26" name="CENTRE PK">
+<createdBy>madeleineneaves</createdBy>
+<createdTime>2024-01-31 01:41:18 UTC</createdTime>
+<ownerDesignName>vfc</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="E14825AF-E34F-3D2F-44F9-3A580813D379" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>6E5C09EB-E711-B575-3875-760CB7D24151</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

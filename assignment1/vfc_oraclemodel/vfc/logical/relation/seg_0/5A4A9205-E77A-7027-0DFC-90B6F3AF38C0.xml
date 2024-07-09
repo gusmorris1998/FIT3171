@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="MEM_MEM_CLASS_SIGNUP" directorySegmentName="seg_0" id="5A4A9205-E77A-7027-0DFC-90B6F3AF38C0">
+<createdBy>madeleineneaves</createdBy>
+<createdTime>2024-01-31 02:08:13 UTC</createdTime>
+<ownerDesignName>vfc</ownerDesignName>
+<engineerTo>
+<item key="E14825AF-E34F-3D2F-44F9-3A580813D379" value="true"/>
+</engineerTo>
+<sourcePk>21B84F78-4449-DDE8-53C8-0DDEFF193318</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>registers</nameOnSource>
+<nameOnTarget> </nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>0662F884-4AAC-BE06-C8D1-CFA3E52645D6</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>C28F1F60-741E-690B-91A3-7E36E79F01DD</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,108 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DF4DFAA8-5079-1257-03C1-F357FA2D7B30" name="FACILITY">
+<createdBy>gusmorris</createdBy>
+<createdTime>2024-02-01 08:21:42 UTC</createdTime>
+<generatorID>7E4DACE7-F8DF-598C-C053-186BA8F9FCF3</generatorID>
+<ownerDesignName>vfc</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="facility_room_no" id="583949BD-26A1-008E-1EA8-303D2F02CD36">
+<createdBy>gusmorris</createdBy>
+<createdTime>2024-02-01 08:21:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[facility room number]]></commentInRDBMS>
+<generatorID>900332D4-4CA0-82E5-A32B-AFD0827474F4</generatorID>
+<ownerDesignName>vfc</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="facility_description" id="1D655714-7E10-3BA9-614C-E0618D242B50">
+<createdBy>gusmorris</createdBy>
+<createdTime>2024-02-01 08:21:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[description of the facility]]></commentInRDBMS>
+<generatorID>FDD6221A-9B72-57A3-D4E7-03242FF16814</generatorID>
+<ownerDesignName>vfc</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="facility_name" id="BB8214CF-C007-2F1E-7383-8C92619FF204">
+<createdBy>gusmorris</createdBy>
+<createdTime>2024-02-01 08:21:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[name of the facility]]></commentInRDBMS>
+<generatorID>13D96970-4433-0C94-E4FE-B614E14A2E43</generatorID>
+<ownerDesignName>vfc</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="facility_cap" id="62E20026-20E8-1323-1CE8-821CB477BEB6">
+<createdBy>gusmorris</createdBy>
+<createdTime>2024-02-01 08:21:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[capacity of the facility]]></commentInRDBMS>
+<generatorID>F55B1EF1-6CF8-D1D9-08A8-218840D2ADFE</generatorID>
+<ownerDesignName>vfc</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="centre_id" id="C3FA1F51-08DB-975F-F366-F3B13390FC45">
+<createdBy>gusmorris</createdBy>
+<createdTime>2024-02-01 08:21:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[unique centre id number]]></commentInRDBMS>
+<generatorID>1F0092A7-F0D9-BB12-86F2-3C0CA0402630</generatorID>
+<ownerDesignName>vfc</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C62D0F8B-9319-8D39-0474-E8E8579F6EC6" referredColumn="B5F140DF-B8D0-4C66-81D0-87DAEFDFB04F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6B312152-1AE5-04FE-9EEF-9F88CDB27CF3" name="FACILITY_PK">
+<createdBy>gusmorris</createdBy>
+<createdTime>2024-02-01 08:21:42 UTC</createdTime>
+<generatorID>D4DE8C72-56D5-3868-64BE-DF7552AD0C2F</generatorID>
+<ownerDesignName>vfc</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="583949BD-26A1-008E-1EA8-303D2F02CD36"/>
+<colUsage columnID="C3FA1F51-08DB-975F-F366-F3B13390FC45"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="641400AC-3F78-CE72-94AE-39A42E34FC79" name="CENTRE_FACILITY">
+<createdBy>gusmorris</createdBy>
+<createdTime>2024-02-01 08:21:42 UTC</createdTime>
+<generatorID>56CC4361-602B-FCCD-87E1-5E22B58EBE4A</generatorID>
+<ownerDesignName>vfc</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C3FA1F51-08DB-975F-F366-F3B13390FC45"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

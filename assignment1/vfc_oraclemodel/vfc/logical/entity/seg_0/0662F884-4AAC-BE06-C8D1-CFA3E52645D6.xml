@@ -1,0 +1,177 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="0662F884-4AAC-BE06-C8D1-CFA3E52645D6" name="MEMBER">
+<createdBy>madeleineneaves</createdBy>
+<createdTime>2024-01-31 02:04:28 UTC</createdTime>
+<ownerDesignName>vfc</ownerDesignName>
+<engineerTo>
+<item key="E14825AF-E34F-3D2F-44F9-3A580813D379" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="member_no" id="F069A8F7-D079-0394-6E9A-FBF7595BB114">
+<createdBy>madeleineneaves</createdBy>
+<createdTime>2024-01-31 02:05:14 UTC</createdTime>
+<commentInRDBMS><![CDATA[member number]]></commentInRDBMS>
+<ownerDesignName>vfc</ownerDesignName>
+<engineerTo>
+<item key="E14825AF-E34F-3D2F-44F9-3A580813D379" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="member_lname" id="D6789BE8-80E3-2725-2A5F-087E31C7026D">
+<createdBy>madeleineneaves</createdBy>
+<createdTime>2024-01-31 04:44:14 UTC</createdTime>
+<commentInRDBMS><![CDATA[last name of the member]]></commentInRDBMS>
+<ownerDesignName>vfc</ownerDesignName>
+<engineerTo>
+<item key="E14825AF-E34F-3D2F-44F9-3A580813D379" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="member_address_street" id="781F49B0-80FE-B693-B7C7-61AEE42E65A4">
+<createdBy>madeleineneaves</createdBy>
+<createdTime>2024-01-31 04:44:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[home address street of member]]></commentInRDBMS>
+<ownerDesignName>vfc</ownerDesignName>
+<engineerTo>
+<item key="E14825AF-E34F-3D2F-44F9-3A580813D379" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="member_address_postcode" id="A1A191A0-2A35-2C28-8B16-F134DB9AC1C8">
+<createdBy>gusmorris</createdBy>
+<createdTime>2024-02-01 10:08:17 UTC</createdTime>
+<commentInRDBMS><![CDATA[home address postcode of member]]></commentInRDBMS>
+<ownerDesignName>vfc</ownerDesignName>
+<engineerTo>
+<item key="E14825AF-E34F-3D2F-44F9-3A580813D379" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="member_address_town" id="CAF22615-7B7D-D75D-8171-96348AF79444">
+<createdBy>gusmorris</createdBy>
+<createdTime>2024-02-01 10:07:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[home address town of member]]></commentInRDBMS>
+<ownerDesignName>vfc</ownerDesignName>
+<engineerTo>
+<item key="E14825AF-E34F-3D2F-44F9-3A580813D379" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="member_mobile_no" id="F619B210-12E0-3B31-DCB7-C6E976E3E77F">
+<createdBy>madeleineneaves</createdBy>
+<createdTime>2024-01-31 04:44:45 UTC</createdTime>
+<commentInRDBMS><![CDATA[mobile number of member]]></commentInRDBMS>
+<ownerDesignName>vfc</ownerDesignName>
+<engineerTo>
+<item key="E14825AF-E34F-3D2F-44F9-3A580813D379" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="member_start_date" id="354DD638-87FD-862F-7A10-FB16F6D19792">
+<createdBy>madeleineneaves</createdBy>
+<createdTime>2024-01-31 04:45:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[commencement of membership in format DDMMYYYY]]></commentInRDBMS>
+<ownerDesignName>vfc</ownerDesignName>
+<engineerTo>
+<item key="E14825AF-E34F-3D2F-44F9-3A580813D379" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>8,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="member_no_refer" id="82533AD3-EC69-DC46-9A73-98F62495D5EC">
+<createdBy>madeleineneaves</createdBy>
+<createdTime>2024-01-31 04:45:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[member number]]></commentInRDBMS>
+<generatorID>0551C3FF-B73E-2019-8812-01AF1959E49A</generatorID>
+<ownerDesignName>vfc</ownerDesignName>
+<engineerTo>
+<item key="E14825AF-E34F-3D2F-44F9-3A580813D379" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>F069A8F7-D079-0394-6E9A-FBF7595BB114</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="member_fname" id="CE53FEBA-5FAF-E00D-4F4E-B3CD73E17F96">
+<createdBy>gusmorris</createdBy>
+<createdTime>2024-02-01 10:05:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[member first name]]></commentInRDBMS>
+<ownerDesignName>vfc</ownerDesignName>
+<engineerTo>
+<item key="E14825AF-E34F-3D2F-44F9-3A580813D379" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="member_address_street_no" id="EC0E4964-1105-4E45-75B0-2E7BC1F449E9">
+<createdBy>gusmorris</createdBy>
+<createdTime>2024-02-01 10:09:19 UTC</createdTime>
+<commentInRDBMS><![CDATA[home address street number of member]]></commentInRDBMS>
+<ownerDesignName>vfc</ownerDesignName>
+<engineerTo>
+<item key="E14825AF-E34F-3D2F-44F9-3A580813D379" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="21B84F78-4449-DDE8-53C8-0DDEFF193318" name="MEMBER PK">
+<createdBy>madeleineneaves</createdBy>
+<createdTime>2024-01-31 02:05:39 UTC</createdTime>
+<ownerDesignName>vfc</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="E14825AF-E34F-3D2F-44F9-3A580813D379" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>F069A8F7-D079-0394-6E9A-FBF7595BB114</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

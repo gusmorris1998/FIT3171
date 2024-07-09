@@ -1,0 +1,171 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="124BC6D5-563D-7CA9-ADBA-E13C88C70BE8" name="MEMBER">
+<createdBy>madeleineneaves</createdBy>
+<createdTime>2024-01-31 02:14:28 UTC</createdTime>
+<generatorID>0662F884-4AAC-BE06-C8D1-CFA3E52645D6</generatorID>
+<ownerDesignName>vfc</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="member_no" id="6E8271EE-544F-0550-C9A5-1762FB288055">
+<createdBy>madeleineneaves</createdBy>
+<createdTime>2024-01-31 02:14:28 UTC</createdTime>
+<commentInRDBMS><![CDATA[member number]]></commentInRDBMS>
+<generatorID>F069A8F7-D079-0394-6E9A-FBF7595BB114</generatorID>
+<ownerDesignName>vfc</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="member_lname" id="0222402A-E6C2-C4F2-1136-394AF0A16CA7">
+<createdBy>gusmorris</createdBy>
+<createdTime>2024-02-01 08:21:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[last name of the member]]></commentInRDBMS>
+<generatorID>D6789BE8-80E3-2725-2A5F-087E31C7026D</generatorID>
+<ownerDesignName>vfc</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="member_address_street" id="AED52532-A5C3-92C4-EAA7-446AE5140FFC">
+<createdBy>gusmorris</createdBy>
+<createdTime>2024-02-01 08:21:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[home address street of member]]></commentInRDBMS>
+<generatorID>781F49B0-80FE-B693-B7C7-61AEE42E65A4</generatorID>
+<ownerDesignName>vfc</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="member_mobile_no" id="308D5EC2-6164-7CDF-56D7-7A1E911C5EBC">
+<createdBy>gusmorris</createdBy>
+<createdTime>2024-02-01 08:21:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[mobile number of member]]></commentInRDBMS>
+<generatorID>F619B210-12E0-3B31-DCB7-C6E976E3E77F</generatorID>
+<ownerDesignName>vfc</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="member_start_date" id="5AFE4D5C-8A83-AF08-A92F-45864DB76AF4">
+<createdBy>gusmorris</createdBy>
+<createdTime>2024-02-01 08:21:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[commencement of membership in format DDMMYYYY]]></commentInRDBMS>
+<generatorID>354DD638-87FD-862F-7A10-FB16F6D19792</generatorID>
+<ownerDesignName>vfc</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>8,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="member_no_refer" id="47AAA5CA-2CDF-D693-3F40-2BBB60BFACD2">
+<createdBy>gusmorris</createdBy>
+<createdTime>2024-02-01 08:21:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[member number]]></commentInRDBMS>
+<generatorID>82533AD3-EC69-DC46-9A73-98F62495D5EC</generatorID>
+<ownerDesignName>vfc</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D764B8A5-0CAF-3A00-D499-216ACFB7037B" referredColumn="6E8271EE-544F-0550-C9A5-1762FB288055"/>
+</associations>
+</Column>
+<Column name="member_address_postcode" id="4F672103-3AF0-3956-8AFA-E7E0D4A740E1">
+<createdBy>gusmorris</createdBy>
+<createdTime>2024-02-01 10:13:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[home address postcode of member]]></commentInRDBMS>
+<generatorID>A1A191A0-2A35-2C28-8B16-F134DB9AC1C8</generatorID>
+<ownerDesignName>vfc</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="member_address_town" id="E16E5BAF-F023-2C0E-4B24-07D3251F9EC3">
+<createdBy>gusmorris</createdBy>
+<createdTime>2024-02-01 10:13:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[home address town of member]]></commentInRDBMS>
+<generatorID>CAF22615-7B7D-D75D-8171-96348AF79444</generatorID>
+<ownerDesignName>vfc</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="member_fname" id="E5594D55-5437-0C22-4356-254532958B84">
+<createdBy>gusmorris</createdBy>
+<createdTime>2024-02-01 10:13:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[member first name]]></commentInRDBMS>
+<generatorID>CE53FEBA-5FAF-E00D-4F4E-B3CD73E17F96</generatorID>
+<ownerDesignName>vfc</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="member_address_street_no" id="6C28F07C-7162-F8A3-68B5-CE598D17A70A">
+<createdBy>gusmorris</createdBy>
+<createdTime>2024-02-01 10:13:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[home address street number of member]]></commentInRDBMS>
+<generatorID>EC0E4964-1105-4E45-75B0-2E7BC1F449E9</generatorID>
+<ownerDesignName>vfc</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="32CEB148-78E6-3980-5F9C-825FE3A8CB73" name="MEMBER_PK">
+<createdBy>madeleineneaves</createdBy>
+<createdTime>2024-01-31 02:14:28 UTC</createdTime>
+<generatorID>21B84F78-4449-DDE8-53C8-0DDEFF193318</generatorID>
+<ownerDesignName>vfc</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6E8271EE-544F-0550-C9A5-1762FB288055"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1CEBD7AB-4C60-4612-57E1-50AF95E84CD6" name="MEMBER_MEMBER">
+<createdBy>gusmorris</createdBy>
+<createdTime>2024-02-01 08:21:42 UTC</createdTime>
+<generatorID>0551C3FF-B73E-2019-8812-01AF1959E49A</generatorID>
+<ownerDesignName>vfc</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="47AAA5CA-2CDF-D693-3F40-2BBB60BFACD2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

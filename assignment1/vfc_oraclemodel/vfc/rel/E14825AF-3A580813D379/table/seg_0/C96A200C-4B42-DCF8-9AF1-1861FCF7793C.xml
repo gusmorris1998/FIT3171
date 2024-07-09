@@ -1,0 +1,126 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C96A200C-4B42-DCF8-9AF1-1861FCF7793C" name="CLASS_STAFFING">
+<createdBy>madeleineneaves</createdBy>
+<createdTime>2024-01-31 02:14:28 UTC</createdTime>
+<generatorID>69119DC6-057E-A1A7-C6DB-07CC387869A8</generatorID>
+<ownerDesignName>vfc</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cs_id" id="43438CC4-26CF-17B2-EDF6-68E49F7ADC1A">
+<createdBy>gusmorris</createdBy>
+<createdTime>2024-02-01 08:21:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Customer staffing ID]]></commentInRDBMS>
+<generatorID>1B871781-4156-ACE4-33BE-06FBCE3E0F28</generatorID>
+<ownerDesignName>vfc</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="class_no" id="2DF34CDF-294C-5BBA-22A6-A9CAFFC325EA">
+<createdBy>madeleineneaves</createdBy>
+<createdTime>2024-01-31 02:14:28 UTC</createdTime>
+<commentInRDBMS><![CDATA[class number identifying class within a centre]]></commentInRDBMS>
+<generatorID>882FD00C-6914-3100-67B7-B2B4D2E22EA2</generatorID>
+<ownerDesignName>vfc</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DA7B66D5-9850-3434-164F-41EA5D094796" referredColumn="DFE7ECE3-586C-F2A9-B7BA-0D4C5440FBC6"/>
+</associations>
+</Column>
+<Column name="staff_id" id="543866E7-471D-10D8-84A7-171B408ACE88">
+<createdBy>madeleineneaves</createdBy>
+<createdTime>2024-01-31 02:14:28 UTC</createdTime>
+<commentInRDBMS><![CDATA[unique staff id number]]></commentInRDBMS>
+<generatorID>D63C6E6C-2A91-5B37-64F8-22C97FA180D2</generatorID>
+<ownerDesignName>vfc</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B92565C8-B3D7-2F70-F2E6-0ECB603DED32" referredColumn="0E939083-117B-3314-44D3-7B3622F71E2E"/>
+</associations>
+</Column>
+<Column name="centre_id" id="8618AC31-85E7-418E-A852-71CF68CC8288">
+<createdBy>gusmorris</createdBy>
+<createdTime>2024-02-01 08:21:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[unique centre id number]]></commentInRDBMS>
+<generatorID>4282FCEE-5386-928C-C160-B5FDA0C9895B</generatorID>
+<ownerDesignName>vfc</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DA7B66D5-9850-3434-164F-41EA5D094796" referredColumn="2F2E345D-D74B-DC3E-3E4D-DD9C207C813E"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A0EE2D85-69C5-1F51-A5E5-81C558E45531" name="CLASS_STAFFING_PK">
+<createdBy>madeleineneaves</createdBy>
+<createdTime>2024-01-31 02:14:28 UTC</createdTime>
+<generatorID>6C93B350-C775-C702-7CDA-C1B5A29AC55D</generatorID>
+<ownerDesignName>vfc</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="43438CC4-26CF-17B2-EDF6-68E49F7ADC1A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4D1C843F-AE50-1797-DCD1-38E6234FB8F7" name="Key_2">
+<createdBy>gusmorris</createdBy>
+<createdTime>2024-02-01 08:21:42 UTC</createdTime>
+<generatorID>EDF78F16-98EF-800A-1755-FB716230331D</generatorID>
+<ownerDesignName>vfc</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2DF34CDF-294C-5BBA-22A6-A9CAFFC325EA"/>
+<colUsage columnID="543866E7-471D-10D8-84A7-171B408ACE88"/>
+<colUsage columnID="8618AC31-85E7-418E-A852-71CF68CC8288"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E52E10B8-B432-E1AE-2956-C777E0DE24E1" name="CLASS_CLASS_STAFFING">
+<createdBy>madeleineneaves</createdBy>
+<createdTime>2024-01-31 02:14:28 UTC</createdTime>
+<generatorID>70C62179-1CF3-1767-8FA6-729C09CD9B8B</generatorID>
+<ownerDesignName>vfc</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2DF34CDF-294C-5BBA-22A6-A9CAFFC325EA"/>
+<colUsage columnID="8618AC31-85E7-418E-A852-71CF68CC8288"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="983CC8FD-5863-300D-DD95-DD142C0ACFA7" name="STAFF_CLASS_STAFFING">
+<createdBy>madeleineneaves</createdBy>
+<createdTime>2024-01-31 02:14:28 UTC</createdTime>
+<generatorID>B03247C1-31DD-2DC5-3C91-9426031D9B01</generatorID>
+<ownerDesignName>vfc</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="543866E7-471D-10D8-84A7-171B408ACE88"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

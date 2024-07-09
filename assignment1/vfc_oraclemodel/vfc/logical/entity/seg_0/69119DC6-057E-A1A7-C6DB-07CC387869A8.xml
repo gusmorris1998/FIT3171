@@ -1,0 +1,111 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="69119DC6-057E-A1A7-C6DB-07CC387869A8" name="CLASS_STAFFING">
+<createdBy>madeleineneaves</createdBy>
+<createdTime>2024-01-31 01:52:21 UTC</createdTime>
+<ownerDesignName>vfc</ownerDesignName>
+<engineerTo>
+<item key="E14825AF-E34F-3D2F-44F9-3A580813D379" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cs_id" id="1B871781-4156-ACE4-33BE-06FBCE3E0F28">
+<createdBy>gusmorris</createdBy>
+<createdTime>2024-02-01 06:41:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[Customer staffing ID]]></commentInRDBMS>
+<ownerDesignName>vfc</ownerDesignName>
+<engineerTo>
+<item key="E14825AF-E34F-3D2F-44F9-3A580813D379" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="class_no" id="882FD00C-6914-3100-67B7-B2B4D2E22EA2">
+<createdBy>madeleineneaves</createdBy>
+<createdTime>2024-01-31 01:53:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[class number identifying class within a centre]]></commentInRDBMS>
+<generatorID>70C62179-1CF3-1767-8FA6-729C09CD9B8B</generatorID>
+<ownerDesignName>vfc</ownerDesignName>
+<engineerTo>
+<item key="E14825AF-E34F-3D2F-44F9-3A580813D379" value="true"/>
+</engineerTo>
+<referedAttribute>8878584D-6E26-CA1F-1C03-09833239EC42</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="staff_id" id="D63C6E6C-2A91-5B37-64F8-22C97FA180D2">
+<createdBy>madeleineneaves</createdBy>
+<createdTime>2024-01-31 01:56:11 UTC</createdTime>
+<commentInRDBMS><![CDATA[unique staff id number]]></commentInRDBMS>
+<generatorID>B03247C1-31DD-2DC5-3C91-9426031D9B01</generatorID>
+<ownerDesignName>vfc</ownerDesignName>
+<engineerTo>
+<item key="E14825AF-E34F-3D2F-44F9-3A580813D379" value="true"/>
+</engineerTo>
+<referedAttribute>18BE91BA-0D03-1E17-A6DA-8FC425021CD4</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="centre_id" id="4282FCEE-5386-928C-C160-B5FDA0C9895B">
+<createdBy>gusmorris</createdBy>
+<createdTime>2024-02-01 07:26:11 UTC</createdTime>
+<commentInRDBMS><![CDATA[unique centre id number]]></commentInRDBMS>
+<generatorID>70C62179-1CF3-1767-8FA6-729C09CD9B8B</generatorID>
+<ownerDesignName>vfc</ownerDesignName>
+<engineerTo>
+<item key="E14825AF-E34F-3D2F-44F9-3A580813D379" value="true"/>
+</engineerTo>
+<referedAttribute>8DE3C62C-2CFE-7A61-CC84-CD84CC49E92B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="6C93B350-C775-C702-7CDA-C1B5A29AC55D" name="CLASS_STAFFING PK">
+<createdBy>madeleineneaves</createdBy>
+<createdTime>2024-01-31 01:54:04 UTC</createdTime>
+<ownerDesignName>vfc</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="E14825AF-E34F-3D2F-44F9-3A580813D379" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>1B871781-4156-ACE4-33BE-06FBCE3E0F28</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="EDF78F16-98EF-800A-1755-FB716230331D" name="Key_2">
+<createdBy>gusmorris</createdBy>
+<createdTime>2024-02-01 07:28:28 UTC</createdTime>
+<ownerDesignName>vfc</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="E14825AF-E34F-3D2F-44F9-3A580813D379" value="false"/>
+</engineerTo>
+<newElementsIDs>882FD00C-6914-3100-67B7-B2B4D2E22EA2,D63C6E6C-2A91-5B37-64F8-22C97FA180D2,4282FCEE-5386-928C-C160-B5FDA0C9895B</newElementsIDs>
+<usedAttributes>
+<attributeRef>882FD00C-6914-3100-67B7-B2B4D2E22EA2</attributeRef>
+<attributeRef>D63C6E6C-2A91-5B37-64F8-22C97FA180D2</attributeRef>
+<attributeRef>4282FCEE-5386-928C-C160-B5FDA0C9895B</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

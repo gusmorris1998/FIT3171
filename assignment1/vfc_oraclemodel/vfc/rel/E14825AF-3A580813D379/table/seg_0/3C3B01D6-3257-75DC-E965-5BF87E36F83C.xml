@@ -1,0 +1,84 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3C3B01D6-3257-75DC-E965-5BF87E36F83C" name="MEMBER_CLASS_ATTENDANCE">
+<createdBy>madeleineneaves</createdBy>
+<createdTime>2024-01-31 02:14:28 UTC</createdTime>
+<generatorID>9FFA89F0-F3AD-2EF1-5FA3-1C1525AE7363</generatorID>
+<ownerDesignName>vfc</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="mem_cls_sign_id" id="A6BB32B5-9619-2C6D-208A-DC425A7447EC">
+<createdBy>gusmorris</createdBy>
+<createdTime>2024-02-01 08:21:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Member class signup ID]]></commentInRDBMS>
+<generatorID>3FF1D751-D3A9-1CF0-7E3B-C9CAB03539DC</generatorID>
+<ownerDesignName>vfc</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D0C1BAE8-ED81-DF5D-61CB-433BB7BD2C25" referredColumn="77FD8FDC-8A9F-BA24-A05B-E6029156C0D7"/>
+</associations>
+</Column>
+<Column name="mem_class_attend_isattend" id="1217E132-2690-155D-F7D7-1B2D305C74B8">
+<createdBy>madeleineneaves</createdBy>
+<createdTime>2024-01-31 02:14:28 UTC</createdTime>
+<commentInRDBMS><![CDATA[whether the member attended the class occurence (Y/N)]]></commentInRDBMS>
+<generatorID>92A5564B-E759-5687-14D2-9F3E4EC44594</generatorID>
+<ownerDesignName>vfc</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<listOfValues>
+<valueDef value="N" description="No"/>
+<valueDef value="Y" description="Yes"/>
+</listOfValues>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="mem_class_attend_date" id="D8CA035F-34B6-E592-3C9F-59D10991B528">
+<createdBy>madeleineneaves</createdBy>
+<createdTime>2024-02-01 12:51:43 UTC</createdTime>
+<commentInRDBMS><![CDATA[date of the class session in format DDMMYYYY]]></commentInRDBMS>
+<generatorID>6BCB91D2-31CA-4D55-B4C8-5AC21D189E0D</generatorID>
+<ownerDesignName>vfc</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>8,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="98F8CF54-A79F-EEF4-302B-316AD48842FE" name="MEMBER_CLASS_ATTENDANCE_PK">
+<createdBy>madeleineneaves</createdBy>
+<createdTime>2024-01-31 02:14:28 UTC</createdTime>
+<generatorID>15C59BD8-9029-18D3-5765-E49E784EB721</generatorID>
+<ownerDesignName>vfc</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A6BB32B5-9619-2C6D-208A-DC425A7447EC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="20729C08-E4A4-74F3-9E22-495F2C82D53E" name="MEM_CL_SIGNUP_MEM_CL_ATTEND">
+<createdBy>madeleineneaves</createdBy>
+<createdTime>2024-01-31 02:14:28 UTC</createdTime>
+<generatorID>F466F270-6585-B601-216B-8733A5D2BD2A</generatorID>
+<ownerDesignName>vfc</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A6BB32B5-9619-2C6D-208A-DC425A7447EC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

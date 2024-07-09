@@ -1,0 +1,108 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="7E4DACE7-F8DF-598C-C053-186BA8F9FCF3" name="FACILITY">
+<createdBy>madeleineneaves</createdBy>
+<createdTime>2024-01-31 04:38:08 UTC</createdTime>
+<ownerDesignName>vfc</ownerDesignName>
+<engineerTo>
+<item key="E14825AF-E34F-3D2F-44F9-3A580813D379" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="facility_room_no" id="900332D4-4CA0-82E5-A32B-AFD0827474F4">
+<createdBy>madeleineneaves</createdBy>
+<createdTime>2024-01-31 04:38:13 UTC</createdTime>
+<commentInRDBMS><![CDATA[facility room number]]></commentInRDBMS>
+<ownerDesignName>vfc</ownerDesignName>
+<engineerTo>
+<item key="E14825AF-E34F-3D2F-44F9-3A580813D379" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="facility_description" id="FDD6221A-9B72-57A3-D4E7-03242FF16814">
+<createdBy>madeleineneaves</createdBy>
+<createdTime>2024-01-31 04:38:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[description of the facility]]></commentInRDBMS>
+<ownerDesignName>vfc</ownerDesignName>
+<engineerTo>
+<item key="E14825AF-E34F-3D2F-44F9-3A580813D379" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="facility_name" id="13D96970-4433-0C94-E4FE-B614E14A2E43">
+<createdBy>madeleineneaves</createdBy>
+<createdTime>2024-01-31 04:39:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[name of the facility]]></commentInRDBMS>
+<ownerDesignName>vfc</ownerDesignName>
+<engineerTo>
+<item key="E14825AF-E34F-3D2F-44F9-3A580813D379" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="facility_cap" id="F55B1EF1-6CF8-D1D9-08A8-218840D2ADFE">
+<createdBy>madeleineneaves</createdBy>
+<createdTime>2024-01-31 04:39:38 UTC</createdTime>
+<commentInRDBMS><![CDATA[capacity of the facility]]></commentInRDBMS>
+<ownerDesignName>vfc</ownerDesignName>
+<engineerTo>
+<item key="E14825AF-E34F-3D2F-44F9-3A580813D379" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="centre_id" id="1F0092A7-F0D9-BB12-86F2-3C0CA0402630">
+<createdBy>madeleineneaves</createdBy>
+<createdTime>2024-01-31 04:40:10 UTC</createdTime>
+<commentInRDBMS><![CDATA[unique centre id number]]></commentInRDBMS>
+<generatorID>56CC4361-602B-FCCD-87E1-5E22B58EBE4A</generatorID>
+<ownerDesignName>vfc</ownerDesignName>
+<engineerTo>
+<item key="E14825AF-E34F-3D2F-44F9-3A580813D379" value="true"/>
+</engineerTo>
+<referedAttribute>6E5C09EB-E711-B575-3875-760CB7D24151</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="D4DE8C72-56D5-3868-64BE-DF7552AD0C2F" name="FACILITY PK">
+<createdBy>madeleineneaves</createdBy>
+<createdTime>2024-01-31 04:38:42 UTC</createdTime>
+<ownerDesignName>vfc</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="E14825AF-E34F-3D2F-44F9-3A580813D379" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>900332D4-4CA0-82E5-A32B-AFD0827474F4</attributeRef>
+<attributeRef>1F0092A7-F0D9-BB12-86F2-3C0CA0402630</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="STAFF_FIT_ASSESS" directorySegmentName="seg_0" id="D25DCBCE-9521-D297-E232-F8D30FB54325">
+<createdBy>madeleineneaves</createdBy>
+<createdTime>2024-01-31 04:56:46 UTC</createdTime>
+<ownerDesignName>vfc</ownerDesignName>
+<engineerTo>
+<item key="E14825AF-E34F-3D2F-44F9-3A580813D379" value="true"/>
+</engineerTo>
+<sourcePk>42D158EE-1397-3B2C-7F33-3FB9E66CA767</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>oversees</nameOnSource>
+<nameOnTarget> </nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>F4184DCE-2FCC-5FC2-A60B-190CE0E996BF</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>6A00B833-CA7A-B65A-2236-7D79B1E8C7B4</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

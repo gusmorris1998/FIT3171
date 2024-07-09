@@ -1,0 +1,166 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8224794D-CA0C-D331-00D4-6DB5146ED1B3" name="STAFF">
+<createdBy>madeleineneaves</createdBy>
+<createdTime>2024-01-31 02:14:28 UTC</createdTime>
+<generatorID>F4184DCE-2FCC-5FC2-A60B-190CE0E996BF</generatorID>
+<ownerDesignName>vfc</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="staff_id" id="0E939083-117B-3314-44D3-7B3622F71E2E">
+<createdBy>madeleineneaves</createdBy>
+<createdTime>2024-01-31 02:14:28 UTC</createdTime>
+<commentInRDBMS><![CDATA[unique staff id number]]></commentInRDBMS>
+<generatorID>18BE91BA-0D03-1E17-A6DA-8FC425021CD4</generatorID>
+<ownerDesignName>vfc</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="staff_first_name" id="4A756FF4-A99C-9EA0-90E0-9DAE428A176F">
+<createdBy>madeleineneaves</createdBy>
+<createdTime>2024-01-31 02:14:28 UTC</createdTime>
+<commentInRDBMS><![CDATA[first name of the staff member]]></commentInRDBMS>
+<generatorID>6CD9452F-A3DC-8D50-888C-EEA6215AB99C</generatorID>
+<ownerDesignName>vfc</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="staff_isfirstaid" id="6FA52A64-81B6-FB1B-9910-FE1B18596DEA">
+<createdBy>madeleineneaves</createdBy>
+<createdTime>2024-01-31 02:14:28 UTC</createdTime>
+<commentInRDBMS><![CDATA[is staff first aid trained (Y/N)]]></commentInRDBMS>
+<generatorID>4FE33DCF-7FB7-6D06-99A0-1762B6548DBE</generatorID>
+<ownerDesignName>vfc</ownerDesignName>
+<constraintName>chk_yorn</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<listOfValues>
+<valueDef value="N" description="No"/>
+<valueDef value="Y" description="Yes"/>
+</listOfValues>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="staff_role" id="27F514A3-93DD-A92A-6678-6D48F1CF690D">
+<createdBy>gusmorris</createdBy>
+<createdTime>2024-02-01 08:21:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Administration (A)
+Cleaner (C)
+Instructor Dry (D)
+Instructor Pool (P)
+Manager (only one per centre) (M)
+Sales (S)
+Security (T)]]></commentInRDBMS>
+<generatorID>992857DB-0F71-9F48-8266-BBDCEE8E30D3</generatorID>
+<ownerDesignName>vfc</ownerDesignName>
+<constraintName>chk_role</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<listOfValues>
+<valueDef value="A" description="Administration"/>
+<valueDef value="C" description="Cleaner"/>
+<valueDef value="D" description="Instructor dry"/>
+<valueDef value="M" description="Manager"/>
+<valueDef value="P" description="Instructor pool"/>
+<valueDef value="S" description="Sales"/>
+<valueDef value="T" description="Security"/>
+</listOfValues>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="staff_last_name" id="5C96C050-C0D4-1278-F657-B60C9704E67F">
+<createdBy>gusmorris</createdBy>
+<createdTime>2024-02-01 08:21:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[staff last name]]></commentInRDBMS>
+<generatorID>A7C931AB-3F02-9432-813A-474551F3CF91</generatorID>
+<ownerDesignName>vfc</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="staff_mobile_no" id="6C47BE3D-750E-BF03-D2CC-385AF6E3DCFF">
+<createdBy>gusmorris</createdBy>
+<createdTime>2024-02-01 08:21:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[staff mobile number]]></commentInRDBMS>
+<generatorID>9C6D2BD4-4BF5-73BF-F90F-65464BA9BC66</generatorID>
+<ownerDesignName>vfc</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="staff_start_date" id="D252D360-07E7-E9F1-FEC0-FC89D8491840">
+<createdBy>gusmorris</createdBy>
+<createdTime>2024-02-01 08:21:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[staff start date in format DDMMYYYY]]></commentInRDBMS>
+<generatorID>B5320E42-A983-07BA-F05F-6C1AB5B1A63D</generatorID>
+<ownerDesignName>vfc</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>8,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="centre_id" id="33382E48-E857-6F82-B316-7F1D41B775F7">
+<createdBy>gusmorris</createdBy>
+<createdTime>2024-02-01 08:21:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[unique centre id number]]></commentInRDBMS>
+<generatorID>C7B3F4D7-9AA1-5CF5-08A1-E9AC55D621F4</generatorID>
+<ownerDesignName>vfc</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BAB7CE73-7C06-4E7C-7A58-5A5A590C3D29" referredColumn="B5F140DF-B8D0-4C66-81D0-87DAEFDFB04F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A952F998-99FD-BF4D-9C2A-A00334ABF4C3" name="STAFF_PK">
+<createdBy>madeleineneaves</createdBy>
+<createdTime>2024-01-31 02:14:28 UTC</createdTime>
+<generatorID>42D158EE-1397-3B2C-7F33-3FB9E66CA767</generatorID>
+<ownerDesignName>vfc</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0E939083-117B-3314-44D3-7B3622F71E2E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8E2A0DF5-314A-A66F-6D56-D63EF57BBF03" name="CENTRE_STAFF">
+<createdBy>gusmorris</createdBy>
+<createdTime>2024-02-01 08:21:42 UTC</createdTime>
+<generatorID>2E8BF95A-0B98-0735-5BF5-CD8296A229CA</generatorID>
+<ownerDesignName>vfc</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="33382E48-E857-6F82-B316-7F1D41B775F7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

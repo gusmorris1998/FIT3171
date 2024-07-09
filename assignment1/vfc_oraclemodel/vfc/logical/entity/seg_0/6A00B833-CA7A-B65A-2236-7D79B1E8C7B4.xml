@@ -1,0 +1,137 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="6A00B833-CA7A-B65A-2236-7D79B1E8C7B4" name="FITNESS_ASSESSMENT">
+<createdBy>madeleineneaves</createdBy>
+<createdTime>2024-01-31 04:52:27 UTC</createdTime>
+<ownerDesignName>vfc</ownerDesignName>
+<engineerTo>
+<item key="E14825AF-E34F-3D2F-44F9-3A580813D379" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ass_date" id="D1D71F19-F6CD-8AC8-A57C-45B2074C1136">
+<createdBy>madeleineneaves</createdBy>
+<createdTime>2024-01-31 04:52:37 UTC</createdTime>
+<commentInRDBMS><![CDATA[assessment date in the format DDMMYYYY]]></commentInRDBMS>
+<ownerDesignName>vfc</ownerDesignName>
+<engineerTo>
+<item key="E14825AF-E34F-3D2F-44F9-3A580813D379" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>8,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ass_weight" id="ACE2B29C-EDDD-6FAC-62D3-DBA23F617AD2">
+<createdBy>madeleineneaves</createdBy>
+<createdTime>2024-01-31 04:52:56 UTC</createdTime>
+<commentInRDBMS><![CDATA[weight of member in assessment]]></commentInRDBMS>
+<ownerDesignName>vfc</ownerDesignName>
+<engineerTo>
+<item key="E14825AF-E34F-3D2F-44F9-3A580813D379" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ass_BMI" id="7D784529-A1FF-E4FE-C952-07F9BBC9B4B6">
+<createdBy>madeleineneaves</createdBy>
+<createdTime>2024-01-31 04:53:10 UTC</createdTime>
+<commentInRDBMS><![CDATA[BMI of the member in %]]></commentInRDBMS>
+<ownerDesignName>vfc</ownerDesignName>
+<engineerTo>
+<item key="E14825AF-E34F-3D2F-44F9-3A580813D379" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ass_vo2max" id="36B7117B-810B-816A-0971-53F8D7F4A6F1">
+<createdBy>madeleineneaves</createdBy>
+<createdTime>2024-01-31 04:53:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[VO2MAX of member]]></commentInRDBMS>
+<ownerDesignName>vfc</ownerDesignName>
+<engineerTo>
+<item key="E14825AF-E34F-3D2F-44F9-3A580813D379" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ass_bloodpressure" id="2F7C6DE1-2FB3-F6B9-B27A-92E403268E40">
+<createdBy>madeleineneaves</createdBy>
+<createdTime>2024-01-31 04:53:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[recorded bloodpressure of member]]></commentInRDBMS>
+<ownerDesignName>vfc</ownerDesignName>
+<engineerTo>
+<item key="E14825AF-E34F-3D2F-44F9-3A580813D379" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="member_no" id="5BCB1336-6DCE-51A9-8C23-8D3042F284D6">
+<createdBy>madeleineneaves</createdBy>
+<createdTime>2024-01-31 04:54:36 UTC</createdTime>
+<commentInRDBMS><![CDATA[member number]]></commentInRDBMS>
+<generatorID>59D76A56-E6C5-A055-05F3-B38042EAB752</generatorID>
+<ownerDesignName>vfc</ownerDesignName>
+<engineerTo>
+<item key="E14825AF-E34F-3D2F-44F9-3A580813D379" value="true"/>
+</engineerTo>
+<referedAttribute>F069A8F7-D079-0394-6E9A-FBF7595BB114</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="staff_id" id="284D0FBC-E933-9916-6BA3-3338D8852F8A">
+<createdBy>madeleineneaves</createdBy>
+<createdTime>2024-01-31 04:56:46 UTC</createdTime>
+<commentInRDBMS><![CDATA[unique staff id number]]></commentInRDBMS>
+<generatorID>D25DCBCE-9521-D297-E232-F8D30FB54325</generatorID>
+<ownerDesignName>vfc</ownerDesignName>
+<engineerTo>
+<item key="E14825AF-E34F-3D2F-44F9-3A580813D379" value="true"/>
+</engineerTo>
+<referedAttribute>18BE91BA-0D03-1E17-A6DA-8FC425021CD4</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="9DA68768-C196-9AF5-D699-0D64D5FD6F21" name="FITNESS_ASSESSMENT PK">
+<createdBy>madeleineneaves</createdBy>
+<createdTime>2024-01-31 04:52:49 UTC</createdTime>
+<ownerDesignName>vfc</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="E14825AF-E34F-3D2F-44F9-3A580813D379" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>D1D71F19-F6CD-8AC8-A57C-45B2074C1136</attributeRef>
+<attributeRef>5BCB1336-6DCE-51A9-8C23-8D3042F284D6</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

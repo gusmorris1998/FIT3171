@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="vfc" id="BA61FB22-F6A7-55CF-2638-EE0623001D7B" version="3.5">
+<createdBy>madeleineneaves</createdBy>
+<createdTime>2024-01-31 01:36:25 UTC</createdTime>
+<ownerDesignName>vfc</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>BA61FB22-F6A7-55CF-2638-EE0623001D7B</designId>
+</OSDM_Design>

@@ -1,0 +1,138 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C28F1F60-741E-690B-91A3-7E36E79F01DD" name="MEMBER_CLASS_SIGNUP">
+<createdBy>madeleineneaves</createdBy>
+<createdTime>2024-01-31 02:05:57 UTC</createdTime>
+<ownerDesignName>vfc</ownerDesignName>
+<engineerTo>
+<item key="E14825AF-E34F-3D2F-44F9-3A580813D379" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="mem_cls_sign_id" id="927481BE-7EBA-7FCA-6B85-88E7ECF7A7ED">
+<createdBy>gusmorris</createdBy>
+<createdTime>2024-02-01 06:40:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[Member class signup ID]]></commentInRDBMS>
+<ownerDesignName>vfc</ownerDesignName>
+<engineerTo>
+<item key="E14825AF-E34F-3D2F-44F9-3A580813D379" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="mem_cls_sign_paydate" id="D5E3FC1B-9689-EE6B-4C96-CF6586BB9B08">
+<createdBy>madeleineneaves</createdBy>
+<createdTime>2024-01-31 02:06:10 UTC</createdTime>
+<commentInRDBMS><![CDATA[payment date in format DDMMYYYY]]></commentInRDBMS>
+<ownerDesignName>vfc</ownerDesignName>
+<engineerTo>
+<item key="E14825AF-E34F-3D2F-44F9-3A580813D379" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>8,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="mem_cls_sign_ttlattend" id="1E1EEABF-FF44-B916-8F97-4D9B5D1BE34F">
+<createdBy>madeleineneaves</createdBy>
+<createdTime>2024-01-31 02:06:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[total number of times member attended the classes scheduled]]></commentInRDBMS>
+<ownerDesignName>vfc</ownerDesignName>
+<engineerTo>
+<item key="E14825AF-E34F-3D2F-44F9-3A580813D379" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="member_no" id="6E187B1F-1BC4-6372-70A8-EFAA1C5B9556">
+<createdBy>madeleineneaves</createdBy>
+<createdTime>2024-01-31 02:08:13 UTC</createdTime>
+<commentInRDBMS><![CDATA[member number]]></commentInRDBMS>
+<generatorID>5A4A9205-E77A-7027-0DFC-90B6F3AF38C0</generatorID>
+<ownerDesignName>vfc</ownerDesignName>
+<engineerTo>
+<item key="E14825AF-E34F-3D2F-44F9-3A580813D379" value="true"/>
+</engineerTo>
+<referedAttribute>F069A8F7-D079-0394-6E9A-FBF7595BB114</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="class_no" id="894BF8ED-0F06-7820-1B74-91E4B99514F1">
+<createdBy>madeleineneaves</createdBy>
+<createdTime>2024-01-31 02:08:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[class number identifying class within a centre]]></commentInRDBMS>
+<generatorID>82C48165-C8CB-23A6-7AFD-4AA54F379FAA</generatorID>
+<ownerDesignName>vfc</ownerDesignName>
+<engineerTo>
+<item key="E14825AF-E34F-3D2F-44F9-3A580813D379" value="true"/>
+</engineerTo>
+<referedAttribute>8878584D-6E26-CA1F-1C03-09833239EC42</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="centre_id" id="0DE56EB3-E748-BBD8-8628-18B7DA149BF8">
+<createdBy>gusmorris</createdBy>
+<createdTime>2024-02-01 07:26:11 UTC</createdTime>
+<commentInRDBMS><![CDATA[unique centre id number]]></commentInRDBMS>
+<generatorID>82C48165-C8CB-23A6-7AFD-4AA54F379FAA</generatorID>
+<ownerDesignName>vfc</ownerDesignName>
+<engineerTo>
+<item key="E14825AF-E34F-3D2F-44F9-3A580813D379" value="true"/>
+</engineerTo>
+<referedAttribute>8DE3C62C-2CFE-7A61-CC84-CD84CC49E92B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="BB46C4C0-9C2F-30DD-7554-F62BCD03B626" name="MEMBER_CLASS_SIGNUP PK">
+<createdBy>madeleineneaves</createdBy>
+<createdTime>2024-01-31 02:08:31 UTC</createdTime>
+<ownerDesignName>vfc</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="E14825AF-E34F-3D2F-44F9-3A580813D379" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>927481BE-7EBA-7FCA-6B85-88E7ECF7A7ED</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="8427DF21-87C3-E140-4722-3591C0DB02C0" name="Key_2">
+<createdBy>gusmorris</createdBy>
+<createdTime>2024-02-01 07:28:12 UTC</createdTime>
+<ownerDesignName>vfc</ownerDesignName>
+<engineerTo>
+<item key="E14825AF-E34F-3D2F-44F9-3A580813D379" value="true"/>
+</engineerTo>
+<newElementsIDs>894BF8ED-0F06-7820-1B74-91E4B99514F1,0DE56EB3-E748-BBD8-8628-18B7DA149BF8,5A4A9205-E77A-7027-0DFC-90B6F3AF38C0</newElementsIDs>
+<usedAttributes>
+<attributeRef>894BF8ED-0F06-7820-1B74-91E4B99514F1</attributeRef>
+<attributeRef>0DE56EB3-E748-BBD8-8628-18B7DA149BF8</attributeRef>
+<attributeRef>6E187B1F-1BC4-6372-70A8-EFAA1C5B9556</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
